@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.baidu.mapapi.map.MapView  
+    	android:id="@+id/bmapView"  
+    	android:layout_width="fill_parent"  
+    	android:layout_height="fill_parent"  
+    	android:clickable="true" />
+    <TextView
+        android:id="@+id/id_textView"
+        android:textColor="#06f"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:gravity="center_horizontal"
+         android:orientation="horizontal" >
+     </LinearLayout>
+
+     <Button
+         android:id="@+id/btn_list"
+         android:layout_width="260dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="17dp"
+         android:background="@drawable/blue_selector"
+         android:textColor="#fff"
+         android:text="@string/btn_list"
+         android:textSize="25dp" />
+
+</RelativeLayout>

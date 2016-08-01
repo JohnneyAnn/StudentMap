@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">学生管理系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ss_title">学生管理</string>
+    <string name="eno">学       号</string>
+    <string name="sname">姓       名</string>
+    <string name="password">密       码</string>
+    <string name="radio_teacher">教师</string>
+	<string name="radio_student">学生</string>
+	<string name="btn_register">注册 </string>
+	<string name="btn_login">登录</string>
+	<string name="baidumap">地图</string>
+	<string name="radio_boy">男</string>
+	<string name="radio_girl">女</string>
+	<string name="reg_info">欢迎注册:</string>
+	<string name="location_list">学生位置列表</string>
+	<string name="btn_list">获取学生列表</string>
+	<string name="tel">手       机</string>
+	<string name="classname">班       级</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.hfuu.map_ts.MainActivity">
+     <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#39f"
+        android:layout_marginTop="75dp"
+        android:text="@string/ss_title"
+        android:textSize="40dp" />
+     <LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+    	android:layout_marginTop="60dp"
+    	android:orientation="horizontal" >
+    	<TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#39f"
+        android:text="@string/eno"
+        android:textSize="23dp"
+        />
+    	<EditText
+    	    android:id="@+id/edit_sno"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:ems="10"
+    	    android:numeric="integer"
+    	    android:maxLength="10"
+    	    android:textColor="#fff"
+    	    android:textSize="23dp" >
+    	    <requestFocus />
+    	</EditText>
+    </LinearLayout>
+    <LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+    	android:layout_marginTop="20dp"
+    	android:orientation="horizontal" >
+    	<TextView
+        android:id="@+id/text_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#39f"
+        android:text="@string/password"
+        android:textSize="23dp"
+        />
+    	<EditText
+    	    android:id="@+id/text_password"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:ems="10"
+    	    android:maxLength="10"
+    	    android:textColor="#fff"
+    	    android:inputType="textPassword"
+    	    android:textSize="23dp" >
+    	</EditText>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/identification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp" >
+		<RadioButton
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:textSize="23dp"
+            android:textColor="#ff0"
+            android:checked="true"
+            android:text="@string/radio_teacher"
+             />
+
+		<RadioButton
+		    android:id="@+id/student"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/radio_student"
+		    android:textColor="#ff0"
+		    android:textSize="23dp" />
+
+    </RadioGroup>
+    <LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+    	android:layout_marginTop="60dp"
+    	android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:textSize="23dp"
+            android:background="@drawable/yellow_selector"
+            android:text="@string/btn_register" />
+
+    	<Button
+        	android:id="@+id/login"
+        	android:layout_width="100dp"
+        	android:layout_marginLeft="60dp"
+        	android:layout_height="35dp"
+        	android:textSize="23dp"
+        	android:background="@drawable/yellow_selector"
+        	android:text="@string/btn_login" />
+    </LinearLayout>
+</LinearLayout>
