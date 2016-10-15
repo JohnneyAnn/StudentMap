@@ -16,5 +16,5 @@
         android:divider="#ff00bbe8"
         android:dividerHeight="1dp"
         android:paddingTop="10dp" />
-
+	<include layout="@layout/menu_right_bottom"/>
 </LinearLayout>

@@ -1,5 +1,22 @@
 package com.hfuu.map_ts;
 
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+import com.baidu.mapapi.SDKInitializer;
+import com.baidu.mapapi.map.BaiduMap;
+import com.baidu.mapapi.map.BitmapDescriptor;
+import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.MapStatusUpdate;
+import com.baidu.mapapi.map.MapStatusUpdateFactory;
+import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.MyLocationConfiguration;
+import com.baidu.mapapi.map.MyLocationData;
+import com.baidu.mapapi.map.MyLocationConfiguration.LocationMode;
+import com.baidu.mapapi.model.LatLng;
+import com.hfuu.map_ts.MyOrientionListener.OnOrientationListener;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -13,25 +30,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.baidu.location.BDLocation;
-import com.baidu.location.BDLocationListener;
-import com.baidu.location.LocationClient;
-import com.baidu.location.LocationClientOption;
-import com.baidu.mapapi.SDKInitializer;
-import com.baidu.mapapi.map.BaiduMap;
-import com.baidu.mapapi.map.BitmapDescriptor;
-import com.baidu.mapapi.map.BitmapDescriptorFactory;
-import com.baidu.mapapi.map.MapStatusUpdate;
-import com.baidu.mapapi.map.MapStatusUpdateFactory;
-import com.baidu.mapapi.map.MapView;
-import com.baidu.mapapi.map.MyLocationConfiguration;
-import com.baidu.mapapi.map.MyLocationConfiguration.LocationMode;
-import com.baidu.mapapi.map.MyLocationData;
-import com.baidu.mapapi.model.LatLng;
-import com.hfuu.map_ts.MyOrientionListener.OnOrientationListener;
-
-
-public class BaiduMapActivity extends Activity {
+public class StudentMapActivity extends Activity {
+	//private String sno = null;//用的时候记得转成int
 	
 	private MapView mMapView; 
 	private BaiduMap mBaiduMap;
@@ -54,7 +54,7 @@ public class BaiduMapActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		SDKInitializer.initialize(getApplicationContext()); 
-        setContentView(R.layout.activity_baidumap); 
+        setContentView(R.layout.student_map); 
         this.context=this;
         initView();
       //初始化定位
@@ -88,19 +88,21 @@ public class BaiduMapActivity extends Activity {
 		});
 	}
 	private void initView() {
-		mMapView=(MapView) findViewById(R.id.bmapView);
+		//Intent intent = getIntent();
+		//sno = intent.getStringExtra("sno");
+		mMapView=(MapView) findViewById(R.id.bmapView_s);
 		mBaiduMap = mMapView.getMap();
 		//设置刚进去的地图放大比例
 		MapStatusUpdate msu = 
 				MapStatusUpdateFactory.zoomTo(15.0f);
 		mBaiduMap.setMapStatus(msu);
-		mTextView = (TextView) findViewById(R.id.id_textView);
-		btnToList = (Button) findViewById(R.id.btn_list);
+		mTextView = (TextView) findViewById(R.id.id_textView_s);
+		btnToList = (Button) findViewById(R.id.btn_list_s);
 		//跳转到列表
 		btnToList.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(context, Location_list.class);
+				Intent intent = new Intent(context, Classmate_List.class);
 				startActivity(intent);
 			}
 		});

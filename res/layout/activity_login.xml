@@ -26,9 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#39f"
-        android:text="@string/eno"
-        android:textSize="23dp"
-        />
+        android:text="@string/no"
+        android:textSize="23dp"/>
     	<EditText
     	    android:id="@+id/edit_sno"
     	    android:layout_width="wrap_content"
@@ -37,6 +36,7 @@
     	    android:numeric="integer"
     	    android:maxLength="10"
     	    android:textColor="#fff"
+    	    android:text="1305021040"
     	    android:textSize="23dp" >
     	    <requestFocus />
     	</EditText>
@@ -60,9 +60,9 @@
     	    android:layout_width="wrap_content"
     	    android:layout_height="wrap_content"
     	    android:ems="10"
-    	    android:maxLength="10"
     	    android:textColor="#fff"
     	    android:inputType="textPassword"
+    	    android:text="anyang"
     	    android:textSize="23dp" >
     	</EditText>
     </LinearLayout>
@@ -79,7 +79,6 @@
             android:layout_marginRight="40dp"
             android:textSize="23dp"
             android:textColor="#ff0"
-            android:checked="true"
             android:text="@string/radio_teacher"
              />
 
@@ -89,6 +88,7 @@
 		    android:layout_height="wrap_content"
 		    android:text="@string/radio_student"
 		    android:textColor="#ff0"
+		    android:checked="true"
 		    android:textSize="23dp" />
 
     </RadioGroup>

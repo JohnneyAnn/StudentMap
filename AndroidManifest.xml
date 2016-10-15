@@ -36,16 +36,28 @@
         </activity>
         
         <activity
-            android:name=".RegisterActivity"
+            android:name=".StudentRegisterActivity"
             android:label="@string/btn_register" >
         </activity>
         <activity
-            android:name=".BaiduMapActivity"
+            android:name=".TeacherRegiterActivity"
+            android:label="@string/btn_register" >
+        </activity>
+        <activity
+            android:name=".TeacherMapActivity"
+            android:label="@string/baidumap">
+        </activity>
+         <activity
+            android:name=".StudentMapActivity"
             android:label="@string/baidumap">
         </activity>
         <activity
             android:name="com.hfuu.map_ts.Location_list"
             android:label="@string/location_list">
+        </activity>
+        <activity
+            android:name="com.hfuu.map_ts.Classmate_List"
+            android:label="@string/classmate_list">
         </activity>
         <service
             android:name="com.baidu.location.f"
