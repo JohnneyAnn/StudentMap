@@ -12,7 +12,7 @@
 ![定位信息](/photos/loc_info.png)
 
 ## 学生位置地图显示
-![功能](/photos/mapper.png)
+![功能](/photos/mapper.jpg)
 
 ## 学生位置列表显示
 ![列表](/photos/student_loc.png)
